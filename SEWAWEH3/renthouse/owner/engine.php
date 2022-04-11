@@ -19,7 +19,6 @@ $bathroom='';
 $description='';
 $latitude='';
 $longitude='';
-$booked='';
 $owner_id='';
 
 
@@ -41,7 +40,7 @@ if(isset($_POST['owner_update'])){
 
 function add_property(){
 
-	global $property_id,$country,$province,$zone,$district,$city,$vdc_municipality,$ward_no,$tole,$contact_no,$property_type,$estimated_price,$total_rooms,$bedroom,$living_room,$kitchen,$bathroom,$description,$latitude,$path,$p_photo,$property_photo_id,$longitude,$owner_id,$booked,$db;
+	global $property_id,$country,$province,$zone,$district,$city,$vdc_municipality,$ward_no,$tole,$contact_no,$property_type,$estimated_price,$total_rooms,$bedroom,$living_room,$kitchen,$bathroom,$description,$latitude,$path,$p_photo,$property_photo_id,$longitude,$owner_id,$db;
 
 
 
@@ -65,7 +64,6 @@ function add_property(){
 	$description=validate($_POST['description']);
 	$latitude=validate($_POST['latitude']);
    	$longitude=validate($_POST['longitude']);
-   	$booked='No';
    	$u_email=$_SESSION['email'];
         $sql1="SELECT * from owner where email='$u_email'";
         $result1=mysqli_query($db,$sql1);
@@ -75,7 +73,7 @@ function add_property(){
           while($rowss=mysqli_fetch_assoc($result1)){
             $owner_id=$rowss['owner_id'];
 
-   	$sql = "INSERT INTO add_property(country,province,zone,district,city,vdc_municipality,ward_no,tole,contact_no,property_type,estimated_price,total_rooms,bedroom,living_room,kitchen,bathroom,description,latitude,longitude,booked,owner_id) VALUES('$country','$province','$zone','$district','$city','$vdc_municipality','$ward_no','$tole','$contact_no','$property_type','$estimated_price','$total_rooms','$bedroom','$living_room','$kitchen','$bathroom','$description','$latitude','$longitude','$booked','$owner_id')";
+   	$sql = "INSERT INTO add_property(country,province,zone,district,city,vdc_municipality,ward_no,tole,contact_no,property_type,estimated_price,total_rooms,bedroom,living_room,kitchen,bathroom,description,latitude,longitude,owner_id) VALUES('$country','$province','$zone','$district','$city','$vdc_municipality','$ward_no','$tole','$contact_no','$property_type','$estimated_price','$total_rooms','$bedroom','$living_room','$kitchen','$bathroom','$description','$latitude','$longitude','$owner_id')";
 		$query=mysqli_query($db,$sql);
 
 		$property_id = mysqli_insert_id($db);
