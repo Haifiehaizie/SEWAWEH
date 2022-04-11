@@ -14,8 +14,8 @@ include("navbar.php");
                 
                 <div class="col-md-12 sign-up" style="text-align: center;">
                     <h3 style="font-weight: bold;">How do you want to Login?</h3><hr>
-                    <p>If you want to sign in as a tenant click on tenant login button otherwise click on owner login button.</p><br><br>
-                    <button type="submit" class="btn btn-info"  onclick="window.location.href='tenant-login.php'" style="width:200px;">Tenant Login</button>
+                    <p>If you want to sign in as a student click on student login button otherwise click on owner login button.</p><br><br>
+                    <button type="submit" class="btn btn-info"  onclick="window.location.href='tenant-login.php'" style="width:200px;">Student Login</button>
                     <button type="submit" class="btn btn-info"  onclick="window.location.href='owner-login.php'" style="width:200px;">Owner Login</button>
                     <button type="submit" class="btn btn-info"  onclick="window.location.href='admin-login.php'" style="width:200px;">Admin Login</button>
                 </div>
