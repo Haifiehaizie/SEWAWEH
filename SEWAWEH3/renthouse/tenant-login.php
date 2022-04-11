@@ -10,7 +10,7 @@ include("tenant-engine.php");
  ?>
 
 <div class="container">
-  <h3 style="font-weight: bold; text-align: center;">Tenant Login</h3><hr><br><br>
+  <h3 style="font-weight: bold; text-align: center;">Student Login</h3><hr><br><br>
   <form method="POST">
     <div class="form-group">
       <label for="email">Email:</label>
