@@ -40,8 +40,6 @@ include("navbar.php");
                   <th>Tole</th>
                   <th>Contact No.</th>
                   <th>Property Type</th>
-                  <th>Latitude</th>
-                  <th>Longitude</th>
                   <th>Estmated Price</th>
                   <th>Total Rooms</th>
                   <th>Bedroom</th>
@@ -74,8 +72,6 @@ include("navbar.php");
                   <td><?php echo $rows['tole'] ?></td>
                   <td><?php echo $rows['contact_no'] ?></td>
                   <td><?php echo $rows['property_type'] ?></td>
-                  <td><?php echo $rows['latitude'] ?></td>
-                  <td><?php echo $rows['longitude'] ?></td>
                   <td>Rs.<?php echo $rows['estimated_price'] ?></td>
                   <td><?php echo $rows['total_rooms'] ?></td>
                   <td><?php echo $rows['bedroom'] ?></td>
