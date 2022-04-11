@@ -5,7 +5,7 @@ include("navbar.php");
  ?>
 
 <div class="container">
-  <h3 style="font-weight: bold; text-align: center;">Tenant Register</h3><hr><br>
+  <h3 style="font-weight: bold; text-align: center;">Student Register</h3><hr><br>
   <form method="POST" action="tenant-engine.php" enctype="multipart/form-data">
     <div class="form-group">
       <label for="full_name">Full Name:</label>
